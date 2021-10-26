@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Covid-19 Rest API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+  <link rel="stylesheet" href="scribbler-global.css">
+  <link rel="stylesheet" href="scribbler-landing.css">
+  <link rel="author" href="humans.txt">
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+
+<body>
+  <nav>
+    <div class=""></div>
+    <ul class="menu">
+      <div class="menu__item toggle"><span></span></div>
+      <li class="menu__item"><a href="https://www.linkedin.com/in/chinmay-mule-246845171/" class="link link--dark"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </li>
+      <li class="menu__item"><a href="https://github.com/chinmay-008" class="link link--dark"><i class="fab fa-github-square"></i> Github</a></li>
+      <li class="menu__item"><a href="https://www.instagram.com/accounts/login/" class="link link--dark"><i class="fab fa-instagram-square"></i> Instagram</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <h1 class="hero__title">Covid-19 Rest API</h1>
+    <p class="hero__description"><b>Data for this API is collected from <a href="https://www.worldometers.info/coronavirus" target="_blank">www.worldometers.info/coronavirus</a> <i>and</i>
+        <a href="https://www.mohfw.gov.in" target="_blank">www.mohfw.gov.in</a></b></p>
+  </div>
+  <div class="hero__terminal">
+    <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">terminal ~ $ </code>
+      </pre>
+  </div>
+  <div class="wrapper">
+    <div class="installation">
+      <h3 class="section__title">World</h3>
+      <div class="tab__container">
+        <ul class="tab__menu">
+          <li class="tab active" data-tab="world">World</li>
+          <li class="tab" data-tab="bycountry">Country</li>
+          <li class="tab" data-tab="worldtotal">Total</li>
+        </ul>
+        <pre class="nohighlight code">
+            <code class="tab__pane active world">$ curl <a href="https://covid19restapi.herokuapp.com/all-countries">https://covid19restapi.herokuapp.com/all-countries</a></code>
+            <code class="tab__pane bycountry">$ curl <a href="https://covid19restapi.herokuapp.com/country?countryname=USA">https://covid19restapi.herokuapp.com/country?countryname=USA</a></code>
+            <code class="tab__pane worldtotal">$ curl <a href="https://covid19restapi.herokuapp.com/total-world">https://covid19restapi.herokuapp.com/total-world</a></code>
+          </pre>
+      </div>
+    </div>
+
+
+    <div class="installation">
+      <h3 class="section__title">India</h3>
+      <div class="tab__container">
+        <ul class="tab__menu">
+          <li class="tab active" data-tab="mac">India</li>
+          <li class="tab" data-tab="linux">State</li>
+          <li class="tab" data-tab="win">Total</li>
+        </ul>
+        <pre class="nohighlight code">
+                        <code class="tab__pane active mac">$ curl <a href="http://covid19restapi.herokuapp.com/india-states-data">http://covid19restapi.herokuapp.com/india-states-data</a></code>
+                        <code class="tab__pane linux">$ curl <a href="http://covid19restapi.herokuapp.com/state?statename=Maharashtra">http://covid19restapi.herokuapp.com/state?statename=Maharashtra</a></code>
+                        <code class="tab__pane win">$ curl <a href="http://covid19restapi.herokuapp.com/total-in-india">http://covid19restapi.herokuapp.com/total-in-india</a></code>
+                      </pre>
+      </div>
+    </div>
+
+
+
+
+
+        </div>
+    <footer class="footer">If you find any bug, or a feature that can updated let me know on <a href="https://github.com/chinmay-008"
+        target="_blank" class="link link--light"><i class="fas fa-code-branch"></i>Github</a> or <a href="https://www.linkedin.com/in/chinmay-mule-246845171/" target="_blank" class="link link--light">Instagram</a>.</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+</body>
+
+</html>
